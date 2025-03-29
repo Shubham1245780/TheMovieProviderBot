@@ -31,7 +31,7 @@ CODE = (environ.get('CODE', 'https://telegra.ph/file/72f425007b22d28bd935e.jpg')
 #stream link shortner
 STREAM_SITE = (environ.get('STREAM_SITE', 'ziplinker.net'))
 STREAM_API = (environ.get('STREAM_API', 'ae0832f39e24094a0661626a792e6a2b8880e310'))
-STREAMHTO = (environ.get('STREAMHTO', 'https://t.me/HowToOpenLinkHP/69'))
+STREAMHTO = (environ.get('STREAMHTO', 'https://t.me/Movieformeon/116'))
 
 # Admins, Channels & Users
 ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '1522697510').split()]
@@ -50,17 +50,17 @@ SUPPORT_CHAT_ID = int(support_chat_id) if support_chat_id and id_pattern.search(
 NO_RESULTS_MSG = bool(environ.get("NO_RESULTS_MSG", False)) # True if you want no results messages in Log Channel
 
 # MongoDB information
-DATABASE_URI = environ.get('DATABASE_URI', "")
-DATABASE_NAME = environ.get('DATABASE_NAME', "")
+DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://IpopkornM:IpopkornM@ipopkornm.xvrncjx.mongodb.net/?retryWrites=true&w=majority&appName=ipopkornM")
+DATABASE_NAME = environ.get('DATABASE_NAME', "IpopkornM")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
 
 # Verify
-VERIFY = bool(environ.get('VERIFY', False)) # Verification On ( True ) / Off ( False )
-HOWTOVERIFY = environ.get('HOWTOVERIFY', url='https://t.me/') # How to open tutorial link for verification
+VERIFY = bool(environ.get('VERIFY', True)) # Verification On ( True ) / Off ( False )
+HOWTOVERIFY = environ.get('HOWTOVERIFY', url='https://t.me/Movieformeon/116') # How to open tutorial link for verification
 
 # Others
-SHORTLINK_URL = environ.get('SHORTLINK_URL', 'instantearn.in')
-SHORTLINK_API = environ.get('SHORTLINK_API', '1502a197c85d59929d50f1cba1d5e6f967d1e962')
+SHORTLINK_URL = environ.get('SHORTLINK_URL', 'indiaearnx.com')
+SHORTLINK_API = environ.get('SHORTLINK_API', 'd49d42c3de6644330056961451c81c531503b114')
 IS_SHORTLINK = bool(environ.get('IS_SHORTLINK', False))
 DELETE_CHANNELS = [int(dch) if id_pattern.search(dch) else dch for dch in environ.get('DELETE_CHANNELS', '0').split()]
 MAX_B_TN = environ.get("MAX_B_TN", "5")
@@ -68,10 +68,10 @@ MAX_BTN = is_enabled((environ.get('MAX_BTN', "True")), True)
 PORT = environ.get("PORT", "8080")
 GRP_LNK = environ.get('GRP_LNK', 'https://t.me/')
 CHNL_LNK = environ.get('CHNL_LNK', 'https://t.me/')
-TUTORIAL = environ.get('TUTORIAL', 'https://t.me/') # Tutorial video link for opening shortlink website 
+TUTORIAL = environ.get('TUTORIAL', 'https://t.me/Movieformeon/116') # Tutorial video link for opening shortlink website 
 IS_TUTORIAL = bool(environ.get('IS_TUTORIAL', True))
-MSG_ALRT = environ.get('MSG_ALRT', 'ᴍᴀɪɴᴛᴀɪɴᴇᴅ ʙʏ : ʜᴘ')
-LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '')) #Log channel id ( make sure bot is admin )
+MSG_ALRT = environ.get('MSG_ALRT', 'ᴍᴀɪɴᴛᴀɪɴᴇᴅ ʙʏ : IpopkornM')
+LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1002534027920')) #Log channel id ( make sure bot is admin )
 SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'https://t.me/') #Support group link ( make sure bot is admin )
 P_TTI_SHOW_OFF = is_enabled((environ.get('P_TTI_SHOW_OFF', "False")), False)
 IMDB = is_enabled((environ.get('IMDB', "False")), False)
